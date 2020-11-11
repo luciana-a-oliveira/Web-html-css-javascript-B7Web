@@ -1,0 +1,407 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; /*td o site*/
+}
+
+body {
+   margin:0;   /* faz c q a pg ocupe td o espaço da tela*/
+   padding:0; /* faz c q a pg ocupe td o espaço da tela*/
+}
+
+header {
+    display:flex; /*usar o display flex*/
+    justify-content:center; /*o container ficará ao centro*/
+    height: 120px;
+}
+
+.container { /*largura, altura e cor do container*/
+    display: flex; /*usar o display flex dentro no container*/
+    justify-content: space-between; /*coloca a logo em uma ponta e o menu na outra*/
+    width:990px; 
+   
+}
+
+.logo { 
+    display: flex;
+    align-items: center;  /*alinhando ao centro do container da logo*/
+}
+
+.menu {
+    display: flex; /*alinhou um ao lado do outro*/
+    align-items: center; /*centralizou*/
+
+}
+
+nav ul, nav li {
+    list-style: none; /*tirou os pontinhos da listagem*/
+    margin: 0; /*tirou a margem*/
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block; /*p alterar tamanho e a area do link*/
+    padding: 15px; /*espaço em volta de cada item do menu*/
+    text-decoration: none; /*tira o sublinhado do menu*/
+    text-transform: uppercase; /*todo meu menu vai ficar em maiusculo*/
+    color: #727272;
+}
+
+nav .active a, nav a:hover { /*qdo passar o mouse */
+    background-color: #39aae1;
+    color: #FFFFFF;
+}
+
+#banner { /*primeira section*/
+    display: flex; /*flex*/
+    justify-content: center; /*centralizar o conteudo do banner*/
+    background-image: url('../images/sorriso.jpeg'); /*imagem*/
+    background-position: center; /*posicionando no meio*/
+    background-size: cover; /*imagem vai se ajustar ao monitor usado*/
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1; /*tamanho variavel*/
+    display: flex;
+    flex-direction: column; /*um abaixo do outro*/
+    justify-content: center; /*o conteúdo fica ao meio do espaço reservado para ele*/
+}
+
+.banner_headline h1 {
+    color: #FFFFFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555; /*leve sombreado abaixo*/
+    margin: 0;
+    padding: 0;
+    max-width: 350px; /*limitando a area, qualquer coisa maior 350 ñ pd se manter fixa*/
+}
+
+.banner_headline h2 {
+    color: #FFFFFF;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555555; /*leve sombreado abaixo*/
+    margin: 0;
+    padding: 0;
+    max-width: 350px; /*limitando a area, qualquer coisa maior 350 ñ pd se manter fixa*/
+    margin-top: 30px; /*margem*/
+}
+
+.banner_options {
+    height: 210px;  /*tamanho fixo*/
+    display: flex;
+}
+
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: #FFFFFF; /*cor dos textos*/
+    padding: 20px; /*espaçamento-margens em volta total*/
+}
+
+.banner1 {
+    background-color: #39aae1;
+}
+
+.banner2 {
+    background-color: #0079c7;
+}
+
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner_title { /*fonte do titulo*/
+    font-size: 21px;
+}
+
+.banner_desc { /*conf do texto*/
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a { /*criação e conf do botão*/
+    display: inline-block; /*tamanho alinhado do botao*/
+    border:  1px solid #FFFFFF; /*conf da borda*/
+    padding: 5px; /*espaço em volta*/
+    color: #FFFFFF; /*cor da fonte*/
+    font-size: 13px; /*tam fonte*/
+    text-decoration: none; /*tira o sublinhado*/
+}
+
+.banner_hours {
+    border-bottom: 1px solid #FFFFFF;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#geral { /* segunda section*/
+    display: flex; /*flex - alinhado a primeira section*/
+    justify-content: center; /*centralizar o conteudo do banner- - alinhado a primeira section*/
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_title { /*conf o titulo*/
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text { /*conf o titulo*/
+    color: #000000;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.widget_title_bar { /*conf barrinha*/
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+
+.widget_body {
+    margin-bottom: 1px solid #FFFFFF;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.flex { 
+    display: flex; /*flex do widget_body*/
+    flex-wrap: wrap; /*quebrar as noticias*/
+}
+
+article {
+    flex: 1;
+    min-width: 300px; /*informa o tamanho min q o artigo deve ocupar*/
+    margin-right: 20px; /*delimitar os espaços dos artigos*/
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at { /*criando o box da data */
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px; /*espaço entre os 2 box*/
+    
+}
+
+article .news_comments { /*criando o box */
+    background-color: #39aae1;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img { /*conf da imagem da noticia*/
+    width: 100%;
+    height: auto;
+} 
+
+article .news_title { /*conf do titulo das noticias*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+
+article .news_resume { /*conf das noticias*/
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.banner_side {
+   display: flex;
+   flex-wrap: wrap; 
+}
+
+.bs_1, .bs_2, .bs_3, .bs_4, .bs_5, .bs_6 {
+    width: 120px;
+    height: 200px;
+    color: #FFFFFF; 
+    background-color: #39aae1;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex; /*um ao lado do outro*/
+    justify-content: center; /*centralizado*/
+}
+
+.footer_menu {
+    display: flex; /*p ficar um do lado do outro*/
+    
+}
+
+.fm_1, .fm_2, .fm_3 {
+    flex: 1; /*p ficar um do lado do outro*/
+    font-size: #ffffff;
+    
+} 
+
+.fm_1 {
+    background-color: #39aae1;
+}
+
+.fm_2 {
+    background-color: #0079c7;
+}
+
+.fm_3 {
+    background-color: #2b4c99;
+}
+
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.footer_area {
+    display: flex;
+}
+
+.footer_areaitem {
+    flex: 1; /*cada item ao lado do outro*/
+    color: #FFFFFF;
+}
+
+.flexColumn { /*do container*/
+    flex-direction: column; /*coloca o container em colunas p q o footer_menu e o footer_area apareçam um abaixo do outro*/
+} 
+
+footer .widget_title_text {
+    color: #FFFFFF;
+}
+
+.footer_copy {
+    border-bottom: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.menuMobile { /*botao do menu*/
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+
+}
+
+.mm_line { /*3 linhas do menu*/
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 600px) { /*inicio das conf p o responsivo*/
+
+    .banner_headline {  /*desgrudar da margem*/
+        padding: 20px;
+    }
+
+    .banner_headline h1 { /*tamanho do titulo*/
+        font-size: 55px; 
+    }
+
+    .banner_headline h2 { /*tamanho do subtitulo*/
+        font-size: 17px;
+    }
+
+    .banner_options { /*colocando a primeira parte em colunas p ajustar a pag*/
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container { /*colocando a segunda parte em colunas p ajustar a pag*/
+        flex-direction: column;
+    }
+
+    #geral section { /*desgrudar da margem*/
+        padding: 20px;
+    }
+
+    #geral aside { /*desgrudar da margem*/
+        padding: 20px;
+    }
+
+    .footer_menu {  /*colocando a footer parte em colunas p ajustar a pag*/
+        flex-direction: column;
+    }
+
+    .footer_area { /*colocando a farea parte em colunas p ajustar a pag*/
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy { /*colocando a farea parte em colunas p ajustar a pag*/
+        padding-left: 20px;   
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menuMobile {
+        display: flex; /*fora oo media é none, só aparece aqui*/
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+
+

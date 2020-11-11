@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./odontohappy/assets/css/template.css" />
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+    <title>OdontoHappy</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="./odontohappy/assets/images/logo.png" /></a>
+            </div>
+            <div class="menu">
+                <nav> <!--menu do site-->
+                    <div class="menuMobile"> <!--Menu q aparece qdo for responsivo-->
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">SOBRE</a></li>
+                        <li><a href="">EQUIPE</a></li>
+                        <li><a href="">ESPECIALIDADES</a></li>
+                        <li><a href="">FALE CONOSCO</a></li>                       
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section id="banner"> <!--Primeira seção do site-->
+        <div class="container column"> 
+            <div class="banner_headline"> <!--primeira area do banner-->
+                <h1>Cuide de Seu sorriso</h1>
+                <h2>Cuidado com sua saúde e beleza</h2>
+
+            </div>
+            <div class="banner_options"> <!--segunda area do banner-->
+                <div class="banner1">
+                    <div class="banner_title">Nossas Instalações</div> 
+                    <div class="banner_desc">Contamos com istalações modernas e  equipamentos de última geração.</div>
+                    <a href="">Mais informações</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Nossa Equipe e Convênios</div>  
+                    <div class="banner_desc">Nossa equipe é altamente especializada e atendemos a todos os convênios.</div>
+                    <a href="">Mais informações</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Horário de Funcionamento</div> 
+                    <div class="banner_hours">Segunda a Sexta:      08:00 às 17:00 horas</div>
+                    <div class="banner_hours">Sábados:              09:30 às 17:30 horas</div>
+                    <div class="banner_hours">Domingos e Fériados:  09:30 às 15:00 horas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="geral">  <!--Segunda seção do site / dentro terá container, 2 div (1a. flex2 e a 2a. flex1 / aside-->
+        <div class="container">
+            <section> <!--apesar de ser section se comporta como uma div-->
+                <div class="widget"> <!--criação widget-->
+                    <div class="widget_title">
+                        <div class="widget_title_text">Últimas Notícias</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                </div>
+
+                <div class="widget_body flex"> <!--corpo widget / o flex coloca uma noticia ao lado da outra, desde q colocado tb no css -->
+                    <article>
+                        <a href=""> <!--coloca td o article como link, aparece a maozinha p clicar-->
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEZ </div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="./odontohappy/assets/images/atendimento.jpg" />
+                            </div>
+                            <div class="news_title">
+                                Atendimento Diferenciado para você e sua Família
+                            </div>
+                            <div class="news_resume">
+                                A Clínica Odontológica Odonto Happy foi fundada em 1981, pela Dra.Maria Silva - CROMG 0002. Há mais de 20 anos no Bairro Castelo oferendo o melhor atendimento, infraestrutura e conforto para os pacientes. Desde então, temos como compromisso zelar pela qualidade nos procedimentos odontológicos executados, com uma equipe altamente qualificada, integrando sempre experiência aos avanços tecnológicos mais recentes na Odontologia.Nossa missão é proporcionar saúde, bem estar, e produzir novos SORRISOS!
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href=""> <!--coloca td o article como link, aparece a maozinha p clicar-->
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEZ </div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="./odontohappy/assets/images/atendimento.jpg" />
+                            </div>
+                            <div class="news_title">
+                                Atendimento Diferenciado para você e sua Família
+                            </div>
+                            <div class="news_resume">
+                                A Clínica Odontológica Odonto Happy foi fundada em 1981, pela Dra.Maria Silva - CROMG 0002. Há mais de 20 anos no Bairro Castelo oferendo o melhor atendimento, infraestrutura e conforto para os pacientes. Desde então, temos como compromisso zelar pela qualidade nos procedimentos odontológicos executados, com uma equipe altamente qualificada, integrando sempre experiência aos avanços tecnológicos mais recentes na Odontologia.Nossa missão é proporcionar saúde, bem estar, e produzir novos SORRISOS!
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href=""> <!--coloca td o article como link, aparece a maozinha p clicar-->
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEZ </div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="./odontohappy/assets/images/atendimento.jpg" />
+                            </div>
+                            <div class="news_title">
+                                Atendimento Diferenciado para você e sua Família
+                            </div>
+                            <div class="news_resume">
+                                A Clínica Odontológica Odonto Happy foi fundada em 1981, pela Dra.Maria Silva - CROMG 0002. Há mais de 20 anos no Bairro Castelo oferendo o melhor atendimento, infraestrutura e conforto para os pacientes. Desde então, temos como compromisso zelar pela qualidade nos procedimentos odontológicos executados, com uma equipe altamente qualificada, integrando sempre experiência aos avanços tecnológicos mais recentes na Odontologia.Nossa missão é proporcionar saúde, bem estar, e produzir novos SORRISOS!
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href=""> <!--coloca td o article como link, aparece a maozinha p clicar-->
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEZ </div>
+                                <div class="news_comments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="./odontohappy/assets/images/atendimento.jpg" />
+                            </div>
+                            <div class="news_title">
+                                Atendimento Diferenciado para você e sua Família
+                            </div>
+                            <div class="news_resume">
+                                A Clínica Odontológica Odonto Happy foi fundada em 1981, pela Dra.Maria Silva - CROMG 0002. Há mais de 20 anos no Bairro Castelo oferendo o melhor atendimento, infraestrutura e conforto para os pacientes. Desde então, temos como compromisso zelar pela qualidade nos procedimentos odontológicos executados, com uma equipe altamente qualificada, integrando sempre experiência aos avanços tecnológicos mais recentes na Odontologia.Nossa missão é proporcionar saúde, bem estar, e produzir novos SORRISOS!
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+            </section>
+            <aside> <!--seria a segunda div-->
+                <div class="widget"> <!--criação widget-->
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departamentos</div>
+                        <div class="widget_title_bar"></div>
+                        <div class="banner_side">
+                            <div class="bs_1">Tratamento</div>
+                            <div class="bs_2">Porcelana</div>
+                            <div class="bs_3">Implante</div>
+                            <div class="bs_4">Ortodontia</div>
+                            <div class="bs_5">Canal</div>
+                            <div class="bs_6">Cirurgia</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="widget"> <!--criação widget-->
+                    <div class="widget_title">
+                        <div class="widget_title_text">Marque uma Consulta</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                </div>
+                <div class="widget_body"> <!--corpo widget -->
+                    Dispomos de vários horários para melhor atendê-los.
+                </div>
+                <div class="widget_body">Telefone: (31) 3333-3333</div>
+                <div class="widget_body">Whatsaap: (31) 9999-9999</div>
+                <div class="widget_body">E-mail  : odontohappy@hotmail.com </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flexColumn">
+
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="">
+                        Planos de Saúde
+                    </a>
+                </div>
+                <div class="fm_2">
+                    <a href="">
+                        Registros Odontologicos
+                    </a>
+                </div>
+                <div class="fm_3">
+                    <a href="">
+                        Contato Online
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget"> <!--criação widget-->
+                        <div class="widget_title">
+                            <div class="widget_title_text">Odonto Happy</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                    </div>
+                    <div class="widget_body"> <!--corpo widget -->
+                        .......
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget"> <!--criação widget-->
+                        <div class="widget_title">
+                            <div class="widget_title_text">Últimas Postagens</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                    </div>
+                    <div class="widget_body"> <!--corpo widget -->
+                        .......
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget"> <!--criação widget-->
+                        <div class="widget_title">
+                            <div class="widget_title_text">Últimos Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                    </div>
+                    <div class="widget_body"> <!--corpo widget -->
+                        .......
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                Copyright - Odonto Happy Templete by LOTecnolog
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

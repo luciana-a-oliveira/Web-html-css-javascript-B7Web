@@ -1,0 +1,15 @@
+
+.banner_side {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px; 
+}
+
+.bs_1, .bs_2, .bs_3, .bs_4, .bs_5, .bs_6 {
+    margin-right: 20px;
+    color: #FFFFFF; /*cor dos textos*/
+    padding: 20px; /*espaçamento-margens em volta total*/
+    background-color: #39aae1;
+}
